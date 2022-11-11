@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồng hồ</title>
+</head>
+<body>
+    <button onclick="x = setTimeout(show(), 2000)">Click</button>
+    <button onclick="clearTimeout(x)">Clear</button>
+    <img src="image/a1.jpg" alt="">
+<br><br>
+setInterval
+<button onclick="y = setInterval(interval, 9000)">setInterval</button>
+<button onclick="clearInterval(y)">clearInterval</button>
+<script>
+    function show(){
+        alert("hello");
+    }
+    function interval(){
+        alert("bye")
+    }
+
+</script>
+</body>
+</html>

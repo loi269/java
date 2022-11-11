@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo3</title>
+    <link rel="stylesheet" href="demo3.css">
+</head>
+    
+  <body>
+    <p id="ds"></p>
+    <h2 id="hea">các sản phẩm</h2>
+    nhập tên sản phẩm : <input id="name1" type="text">
+    <button id="update" type="button" onclick="them()">them</button>
+    <br><br>
+      <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên sản phẩm</th>
+                <th colspan="2">Hành động</th>
+            </tr>
+        </thead>
+        <tbody id="result">
+
+        </tbody>
+    </table>
+    <script>
+        var mathang = [];
+ 
+        function them(){
+            count++;
+            let name = document.getElementById("name1").value;
+            var sanpham = {"name": name};
+            mathang.push(name);
+            console.log(mathang.length);
+            document,getElementById("result").innerHTML += "<tr>" +
+                    "<td>"+ mathang.length +  "</td>" +
+                    "<td>"+ name +  "</td>" +
+                    "<td><button>Sua</button></td>" +
+                    "<td><button>Xoa</button></td>" +
+                    "<tr/>"
+        }
+        // function hienthi(){
+        //     document.getElementById("result").innerHTML=''
+        //     for (let i=0; i<mathang.length;i++){
+        //         documetn.getElementById("result").innerHTML += "<tr>"+
+        //             "<td>"+ i +  "</td>" +
+        //             "<td>"+ mathang[i].name +  "</td>" +
+        //             "<td><button onclick>Sua</button></td>" +
+        //             "<td><button onclick>Xoa</button></td>" +
+        //     }
+        // }
+    </script>
+</body>
+</html>
